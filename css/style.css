@@ -83,6 +83,15 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
   *display: inline;
 }
  
+
+
+.addedDiv {
+  margin: 12px 0;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #2073d9;
+  font-weight: 700;
+  font-size: 1.2em;
+}
 @media (max-width: 767px) {
   body {
     padding-top: 10px;

@@ -145,7 +145,7 @@
 <!--  Login form -->
 <div class="modal hide fade in" id="loginForm" aria-hidden="false">
     <div class="modal-header">
-        <i class="fa fa-times" aria-hidden="true" data-dismiss="modal"></i>
+        <i class="fa fa-times" aria-hidden="true" data-dismiss="modal" id="poreset"></i>
 <!--         <i class="icon-remove" data-dismiss="modal" aria-hidden="true"></i>
  -->        <h4>Track Order</h4>
     </div>
@@ -154,11 +154,12 @@
         <div class="vertical-alignment-helper">
             <div class="modal-dialog vertical-align-center">
                 <form class="form-inline" action="#" method="post" id="form-login">
-                         <input type="text" class="input-large" id="cidname" name="cidname" placeholder="Customer ID">
-                         <input type="text" class="input-large" id="ponumber" name="ponumber" placeholder="Order Number">
+                         <input type="text" class="input-large valid" id="cidname" name="cidname" placeholder="Customer ID">
+                         <input type="text" class="input-large valid" id="ponumber" name="ponumber" placeholder="Order Number">
                          <button class="btn btn-primary" id="track" name="track">Track</button>
                  </form>
                 <a href="#" id="title">Forgot your Customer ID?</a>
+                <div id="add"></div>
                 <div id="res">
                     <table id="ajaxresponse">
                          
@@ -181,9 +182,13 @@
 <script>
 $.ajaxSetup({ headers: { 'csrftoken' : '{{ csrf_token() }}' } });
 $("#track").prop('disabled', true);
-// $('#poreset').click(function(){
-//     $('.valid').val("");
-// });
+$('#poreset').click(function(){
+    $('.valid').val("");
+    $('#resulttitle').replaceWith('<a href="#" id="title">Forgot your Customer ID?</a>');
+    $('#ajaxresponse').empty();
+    $('.addedDiv').empty();
+});
+
 // var povalid;
 // var cidvalid;
 // var result;
@@ -235,7 +240,8 @@ $('#track').on({
                 },
             success: function(datat){
                 if (datat.success) {
-                    $('#title').replaceWith('<h3>Your PO tracking result:</h3>');
+                    $('.addedDiv').empty();
+                    $('#title').replaceWith('<span id="resulttitle"><h3>Your PO tracking result:</h3></span>');
                     $('#ajaxresponse').replaceWith('<table class="table table-hover table-responsive" id="ajaxresponse"><thead class="thead-inverse"><tr><td>AG PO#</td><td>SINOBEC PO#</td><td>Invoice #</td><td>SHIPPING REF</td><td>CONTAINER#</td><td>ETA</td></thead><tbody></tr><tr><td>'+datat.result.ag+'</td><td>'+datat.result.sinobec+'</td><td>'+datat.result.invoice+'</td><td>'+datat.result.shipref+'</td><td>'+datat.result.contref+'</td><td>'+datat.result.eta+'</td></tr></tbody></table>');
                      console.log('povalid');
                     // if(result == "cp") {
@@ -255,5 +261,14 @@ $('#track').on({
         });
     },
 });
+});
+
+function newPart() {
+    $('div#add').append('<div class="addedDiv">Please send email to: info@sinobecresources.com to require your customer ID.</div>');
+    $('div.addedDiv').slideDown("slow");
+}
+
+$(document).ready(function(){
+    $('#title').click(newPart);
 });
 </script>
