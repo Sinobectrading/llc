@@ -1,0 +1,102 @@
+.modal .icon-remove {
+  color: #000 ! important;
+}
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+}
+.gcsc-branding {
+  display: none ! important;
+}
+.cse .gsc-control-cse, .gsc-control-cse {
+  padding: 0px ! important;
+padding-top: 5px ! important;
+}
+.gsc-search-button
+{
+    background-color: #ccc;
+    border-radius: 1px;
+}
+ input.gsc-search-button-v2 {
+  padding: 2px 12px! important;
+ }
+ .gsc-search-box-tools .gsc-search-box .gsc-input {
+  padding-right: 0px ! important;
+ }
+input.gsc-input,
+.gsc-input-box,
+.gsc-input-box-hover,
+.gsc-input-box-focus,
+.gsc-search-button {
+    box-sizing: content-box; 
+    line-height: normal;
+}
+input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:focus {
+    background-color: #ccc !important;
+    background-image: url("http://www.google.com/uds/css/v2/search_box_icon.png") !important;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height: 14px !important;
+    border-color: #ccc !important;
+    filter: none;
+}
+.gsc-adBlock{ 
+        display: none !important; 
+} 
+
+#media p, #media ul {
+  float: right ! important;
+} 
+#media {
+  float: right;
+  padding-right: 0 ! important
+}
+#media ul {
+  padding: 5px 12px;
+    text-align: right;
+      list-style-type: disc;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+.fh5co-nav .top .fh5co-social {
+  display: inline-block;
+  margin: 0;
+  padding: 5px 12px;
+  text-align: right;
+}
+#media ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+ 
+@media (max-width: 767px) {
+  body {
+    padding-top: 10px;
+  }
+  .modal#loginForm {
+    width: 70vw;
+    margin-left: 12vw;
+    margin-top: 10vh;
+  }
+  .modal input[type="text"], .modal input[type="password"] {
+    padding: 5px 10px;
+    min-height: 50px;
+    /* width: 100%; */
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+}
