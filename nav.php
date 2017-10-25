@@ -75,7 +75,7 @@
                     <!-- <li><a href="blog.html">Blog</a></li>  -->
                     <li><a href="contact-us.php">Contact</a></li>
                     <li class="login">
-                        <a data-toggle="modal" href="#loginForm"><i class="fa fa-truck" aria-hidden="true"></i></a>
+                        <a data-toggle="modal" href="#loginForm"><i class="fa fa-truck" aria-hidden="true"></i>&nbsp;Track</a>
                     </li>
                 </ul>        
             </div><!--/.nav-collapse -->

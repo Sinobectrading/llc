@@ -33,7 +33,7 @@ if (isset($_POST["povalue"])) {
 	}
  
 	if ( $stmtpo->rowCount() ==0 ) {
-		echo '{"success":false,"message":"PO number does not exist!"}';
+		echo '{"success":false,"message":"PO number invalid!"}';
 	} 
  	
 ?>
