@@ -120,7 +120,7 @@ input.err:-moz-placeholder { /* Firefox 4 - 18 */
 }
 
 #ajaxresponse {
-  border-top: 3px solid #2dcc70
+  border-top: 2px solid #2dcc70
 }
 button#track[disabled] {
     cursor:not-allowed;

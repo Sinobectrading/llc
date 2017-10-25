@@ -247,12 +247,14 @@ $('#track').on({
                 cidvalue:$('#cidname').val()
                 },
             success: function(datat){
-                if (datat.success) {
+               if (datat.success) {
                     $('.addedDiv').empty();
                     $("#ponumber").removeClass('err');
                     $('#title').replaceWith('<span id="resulttitle"><h3>Your PO tracking result:</h3></span>');
+                    $('#ajaxresponse').replaceWith('<table class="table table-hover table-responsive" id="ajaxresponse"><thead class="thead-inverse"><tr><td>AG PO#</td><td>SINOBEC PO#</td><td>Invoice #</td><td>SHIPPING REF</td><td>CONTAINER#</td><td>ETA</td></tr></thead><tbody></tbody></table>');
                     for (var i = 0; i < datat.size; i++) {  
-                        $('#ajaxresponse').append('<table class="table table-hover table-responsive" id="ajaxresponse"><thead class="thead-inverse"><tr><td>AG PO#</td><td>SINOBEC PO#</td><td>Invoice #</td><td>SHIPPING REF</td><td>CONTAINER#</td><td>ETA</td></thead><tbody></tr><tr><td>'+datat.result[i].ag+'</td><td>'+datat.result[i].sinobec+'</td><td>'+datat.result[i].invoice+'</td><td>'+datat.result[i].shipref+'</td><td>'+datat.result[i].contref+'</td><td>'+datat.result[i].eta+'</td></tr></tbody></table>');
+                        var newString = ['<tr><td>'+datat.result[i].ag+'</td><td>'+datat.result[i].sinobec+'</td><td>'+datat.result[i].invoice+'</td><td>'+datat.result[i].shipref+'</td><td>'+datat.result[i].contref+'</td><td>'+datat.result[i].eta+'</td></tr>'].join('');
+                        $('#ajaxresponse tbody').append(newString);
                     }
                      console.log('povalid');
                     // if(result == "cp") {
