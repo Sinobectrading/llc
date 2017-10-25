@@ -233,6 +233,12 @@ $('#cidname').on({
 
 });
 
+$('#title').on({
+     click: function(){
+          $('div#add').replaceWith('<div class="addedDiv" id="add">Please send email to: info@sinobecresources.com to require your customer ID.</div>');
+          $('div.addedDiv').slideDown("slow");
+     }
+});
  
 $('#track').on({ 
     click: function(event){
@@ -276,12 +282,4 @@ $('#track').on({
 });
 });
 
-function newPart() {
-    $('div#add').replaceWith('<div class="addedDiv">Please send email to: info@sinobecresources.com to require your customer ID.</div>');
-    $('div.addedDiv').slideDown("slow");
-}
-
-$(document).ready(function(){
-    $('#title').click(newPart);
-});
 </script>
