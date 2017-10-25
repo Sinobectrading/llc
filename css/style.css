@@ -92,6 +92,44 @@ input.gsc-search-button, input.gsc-search-button:hover, input.gsc-search-button:
   font-weight: 700;
   font-size: 1.2em;
 }
+
+
+form#form-login input.err {
+  border:3px solid #e9322d;
+}
+ 
+
+input.err::-webkit-input-placeholder {
+  color: #e9322d ! important;
+  opacity: 1 ! important;
+  font-size: 0.8em ! important
+}
+input.err:-ms-input-placeholder { /* IE 10+ */
+  color: #e9322d ! important;
+  font-size: 0.8em ! important
+}
+input.err::-moz-placeholder { /* Firefox 19+ */
+  color: #e9322d ! important;
+  opacity: 1 ! important;
+  font-size: 0.8em ! important
+}
+input.err:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #e9322d ! important;
+  opacity: 1 ! important;
+  font-size: 0.8em ! important
+}
+
+#ajaxresponse {
+  border-top: 3px solid #2dcc70
+}
+button#track[disabled] {
+    cursor:not-allowed;
+    background-color: #b4b4b4
+}
+button#track[disabled]:hover {
+    color: #fff
+}
+
 @media (max-width: 767px) {
   body {
     padding-top: 10px;

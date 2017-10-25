@@ -184,6 +184,11 @@ $.ajaxSetup({ headers: { 'csrftoken' : '{{ csrf_token() }}' } });
 $("#track").prop('disabled', true);
 $('#poreset').click(function(){
     $('.valid').val("");
+    $("#ponumber").removeClass('err');
+    $("#cidname").removeClass('err');
+    $("#cidname").attr("placeholder", "Customer ID").val("");
+    $("#ponumber").attr("placeholder", "PO number").val("");
+    $("#track").prop('disabled', true);
     $('#resulttitle').replaceWith('<a href="#" id="title">Forgot your Customer ID?</a>');
     $('#ajaxresponse').empty();
     $('.addedDiv').empty();
@@ -193,6 +198,7 @@ $('#poreset').click(function(){
 // var cidvalid;
 // var result;
 $(document).ready(function(){
+
 $('#cidname').on({
     focus: function(){
         $("#ciderror").empty();
@@ -208,12 +214,13 @@ $('#cidname').on({
                 },
             success: function(data){
                 if (data.success) {
+                    $("#cidname").removeClass('err');
                     $("#track").prop('disabled', false);
                     console.log('cidvalid');
                 }           
                 if(data.success == false) {
                     $("#cidname").addClass('err');
-                    $("#cidname").attr("placeholder", "Customer ID does not exist!").val("");
+                    $("#cidname").attr("placeholder", "Customer ID doesn't exist,Please try again").val("");
                     $("#cidname").focus();
                     console.log("cid data is false");
                 }
@@ -230,19 +237,23 @@ $('#cidname').on({
 $('#track').on({ 
     click: function(event){
         event.preventDefault();
-        var ponumber = $('#ponumber').val();
+        // var ponumber = $('#ponumber').val();
         $.ajax({
             type: "POST",
             url:"po.php",
             dataType: "json",
             data:{
-                povalue:ponumber
+                povalue:$('#ponumber').val(),
+                cidvalue:$('#cidname').val()
                 },
             success: function(datat){
                 if (datat.success) {
                     $('.addedDiv').empty();
+                    $("#ponumber").removeClass('err');
                     $('#title').replaceWith('<span id="resulttitle"><h3>Your PO tracking result:</h3></span>');
-                    $('#ajaxresponse').replaceWith('<table class="table table-hover table-responsive" id="ajaxresponse"><thead class="thead-inverse"><tr><td>AG PO#</td><td>SINOBEC PO#</td><td>Invoice #</td><td>SHIPPING REF</td><td>CONTAINER#</td><td>ETA</td></thead><tbody></tr><tr><td>'+datat.result.ag+'</td><td>'+datat.result.sinobec+'</td><td>'+datat.result.invoice+'</td><td>'+datat.result.shipref+'</td><td>'+datat.result.contref+'</td><td>'+datat.result.eta+'</td></tr></tbody></table>');
+                    for (var i = 0; i < datat.size; i++) {  
+                        $('#ajaxresponse').append('<table class="table table-hover table-responsive" id="ajaxresponse"><thead class="thead-inverse"><tr><td>AG PO#</td><td>SINOBEC PO#</td><td>Invoice #</td><td>SHIPPING REF</td><td>CONTAINER#</td><td>ETA</td></thead><tbody></tr><tr><td>'+datat.result[i].ag+'</td><td>'+datat.result[i].sinobec+'</td><td>'+datat.result[i].invoice+'</td><td>'+datat.result[i].shipref+'</td><td>'+datat.result[i].contref+'</td><td>'+datat.result[i].eta+'</td></tr></tbody></table>');
+                    }
                      console.log('povalid');
                     // if(result == "cp") {
                     //  $("#track").prop('disabled', false);
@@ -264,7 +275,7 @@ $('#track').on({
 });
 
 function newPart() {
-    $('div#add').append('<div class="addedDiv">Please send email to: info@sinobecresources.com to require your customer ID.</div>');
+    $('div#add').replaceWith('<div class="addedDiv">Please send email to: info@sinobecresources.com to require your customer ID.</div>');
     $('div.addedDiv').slideDown("slow");
 }
 
