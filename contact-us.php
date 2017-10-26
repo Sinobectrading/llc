@@ -18,23 +18,27 @@
                 <h4>Contact Form</h4>
                 <div class="status alert alert-success" style="display: none"></div>
 
-                <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
+
+
+                <form id="main-contact-form" class="contact-form toggle-disabled" name="contact-form" method="post" action="mail.php">
                   <div class="row-fluid">
                     <div class="span5">
                         <label>First Name</label>
-                        <input type="text" class="input-block-level" required="required" placeholder="Your First Name">
+                        <input type="text" id="fname" name="fname" class="input-block-level" placeholder="Your First Name"  data-validation="alphanumeric required"  data-validation-error-msg="Input empty or invalid sympol">
                         <label>Last Name</label>
-                        <input type="text" class="input-block-level" required="required" placeholder="Your Last Name">
+                        <input type="text" class="input-block-level" id="lname" name="lname"  data-validation="alphanumeric required" data-validation-error-msg="Input empty or invalid sympol" placeholder="Your Last Name">
                         <label>Email Address</label>
-                        <input type="text" class="input-block-level" required="required" placeholder="Your email address">
+                        <input type="text" class="input-block-level" id="email" name="email" placeholder="Your email address" data-validation="email required">
                     </div>
                     <div class="span7">
                         <label>Message</label>
-                        <textarea name="message" id="message" required="required" class="input-block-level" rows="8"></textarea>
+                        <textarea name="message" id="message" required="required" class="input-block-level" rows="8" data-validation="required"></textarea>
                     </div>
 
                 </div>
-                <button type="submit" class="btn btn-primary btn-large pull-right">Send Message</button>
+                <button type="submit" id="submit" name="submit" class="btn btn-primary btn-large pull-right">Send Message</button>
+ 
+                <span id="msgsent"></span>
                 <p> </p>
 
             </form>
@@ -64,5 +68,45 @@
 
 <!--Bottom-->
 <?php include_once 'footer.php'; ?>
+<script>
+$(document).ready(function(){
+$.validate({
+    form : '#main-contact-form',
+    modules : 'toggleDisabled',
+    disabledFormFilter : 'form.toggle-disabled'
+  // onSuccess: function($form){
+  //    $("#msgsent").html("<img src='images/l02.gif'/>");
+  // }
+});
+
+$("#submit").click(function(){
+    $("#main-contact-form").submit(function(e){
+        $("#msgsent").html("<img src='images/l02.gif'/>");
+        var postData = $(this).serializeArray();
+        var formURL = $(this).attr("action");
+        $.ajax({
+            url : formURL,
+            type: "POST",
+            data : postData,
+            success:function(data, textStatus, jqXHR){
+                $("#msgsent").replaceWith('Success!');
+
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                $("#msgsent").html('Failed, please try again.');
+            }
+        });
+        e.preventDefault(); //STOP default action
+        // e.unbind();
+    });
+        
+    $("#main-contact-form").submit(); //SUBMIT FORM
+});
+
+ 
+
+});
+</script>
+
 </body>
 </html>

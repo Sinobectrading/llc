@@ -52,18 +52,34 @@
             <a id="logo" class="pull-left" href="index.php"></a>
             <div class="nav-collapse collapse pull-right">
                 <ul class="nav">
-                    <li class="active"><a href="index.php">Home</a></li>
-                    <li><a href="about-us.php">About Us</a></li>
-                    <li><a href="news.php">News</a></li>
-                    <li><a href="services.php">Services</a></li>
+                    <li
+                    <?php if (trim($_SERVER['PHP_SELF']) == "/sinobecresources/index.php") {
+                                   echo 'class="active"';} ?> 
+                    ><a href="index.php">Home</a></li>
+                    <li
+                    <?php if (trim($_SERVER['PHP_SELF']) == "/sinobecresources/about-us.php") {
+                                   echo 'class="active"';} ?> 
+                    ><a href="about-us.php">About Us</a></li>
+                    <li
+                    <?php if (trim($_SERVER['PHP_SELF']) == "/sinobecresources/news.php") {
+                                   echo 'class="active"';} ?> 
+                    ><a href="news.php">News</a></li>
+                    <li
+                    <?php if (trim($_SERVER['PHP_SELF']) == "/sinobecresources/services.php") {
+                                   echo 'class="active"';} ?> 
+                    ><a href="services.php">Services</a></li>
 <!--                         <li><a href="product.php">Products</a></li>
--->                        <li class="dropdown">
+-->                 <li 
+                    <?php if( (trim($_SERVER['PHP_SELF']) == "/sinobecresources/aluminum.php") ||
+                         (trim($_SERVER['PHP_SELF']) == "/sinobecresources/404.php") )
+                          { echo 'class="active dropdown"';} else {echo 'class="dropdown"';} ?> 
+                    >
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products&nbsp;<i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="aluminum.php">Alumnium</a></li>
-                            <li><a href="404.php">Coating</a></li>
-                            <li><a href="404.php">Plate</a></li>
-                            <li><a href="404.php">Steel</a></li>
+                            <li><a href="aluminum.php">ALUMINUM EXTRUSIONS</a></li>
+                            <li><a href="404.php">ALUMINUM BILLET</a></li>
+                            <li><a href="404.php">ALUMINUM FLAT </a></li>
+                            <li><a href="404.php">ALUMINUM ROLLE</a></li>
                            <!--  <li><a href="404.php">404</a></li>
                             <li><a href="typography.html">Typography</a></li>
                             <li><a href="registration.html">Registration</a></li>
@@ -73,7 +89,10 @@
                         </ul>
                     </li>
                     <!-- <li><a href="blog.html">Blog</a></li>  -->
-                    <li><a href="contact-us.php">Contact</a></li>
+                    <li
+                    <?php if (trim($_SERVER['PHP_SELF']) == "/sinobecresources/contact-us.php") {
+                                   echo 'class="active"';} ?> 
+                    ><a href="contact-us.php">Contact</a></li>
                     <li class="login">
                         <a data-toggle="modal" href="#loginForm"><i class="fa fa-truck" aria-hidden="true"></i>&nbsp;Track</a>
                     </li>

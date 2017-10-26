@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<?php include_once 'header.php'; ?>
+<?php include_once '../header.php'; ?>
 </head>
 
 <body>
 
     <!--Header-->
-    <?php include_once 'nav.php'; ?>
+    <?php include_once '../nav.php'; ?>
     <!-- /header -->
 
 
@@ -17,7 +17,7 @@
                 </div>
                 <div class="span6">
                     <ul class="breadcrumb pull-right">
-                        <li><a href="index.php">Home</a> <span class="divider">/</span></li>
+                        <li><a href="../index.php">Home</a> <span class="divider">/</span></li>
                          <li class="active">News</li>
                     </ul>
                 </div>
@@ -38,7 +38,7 @@
                           </p>
                            
                       </div>
-                      <p><img src="images/sample/blog1.jpg" width="100%" alt="" /></p>
+                      <p><img src="../images/news/01b.jpg" width="100%" alt="" /></p>
                       <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
 
                       <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word </p>
@@ -52,18 +52,7 @@
 
                     <div class="user-info media box">
                         <div class="pull-left">
-                            <img src="images/news/01.png" alt="" />
-                        </div>
-                        <div class="media-body">
-                            <h5 style="margin-top: 0">News Title 2</h5>
-                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything.</p>
-                        </div>
-                        <p class="pull-right"><a href="news/news01.php">[ Read more ]</a></p>
-                    </div>
-
-                    <div class="user-info media box">
-                        <div class="pull-left">
-                            <img src="images/news/01.png" alt="" />
+                            <img src="../images/news/01.png" alt="" />
                         </div>
                         <div class="media-body">
                             <h5 style="margin-top: 0">News Title 2</h5>
@@ -74,7 +63,18 @@
 
                     <div class="user-info media box">
                         <div class="pull-left">
-                            <img src="images/news/01.png" alt="" />
+                            <img src="../images/news/01.png" alt="" />
+                        </div>
+                        <div class="media-body">
+                            <h5 style="margin-top: 0">News Title 2</h5>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything.</p>
+                        </div>
+                        <p class="pull-right"><a href="">[ Read more ]</a></p>
+                    </div>
+
+                    <div class="user-info media box">
+                        <div class="pull-left">
+                            <img src="../images/news/01.png" alt="" />
                         </div>
                         <div class="media-body">
                             <h5 style="margin-top: 0">News Title 2</h5>
@@ -105,21 +105,21 @@
             <div class="widget ads">
                 <div class="row-fluid">
                     <div class="span6">
-                        <a href="#"><img src="images/ads/ad1.png" alt=""></a>
+                        <a href="#"><img src="../images/ads/ad1.png" alt=""></a>
                     </div>
 
                     <div class="span6">
-                        <a href="#"><img src="images/ads/ad2.png" alt=""></a>
+                        <a href="#"><img src="../images/ads/ad2.png" alt=""></a>
                     </div>
                 </div>
                 <p> </p>
                 <div class="row-fluid">
                     <div class="span6">
-                        <a href="#"><img src="images/ads/ad3.png" alt=""></a>
+                        <a href="#"><img src="../images/ads/ad3.png" alt=""></a>
                     </div>
 
                     <div class="span6">
-                        <a href="#"><img src="images/ads/ad4.png" alt=""></a>
+                        <a href="#"><img src="../images/ads/ad4.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -230,7 +230,7 @@
 </section>
 
 <!--Bottom-->
-<?php include_once 'footer.php'; ?>
+<?php include_once '../footer.php'; ?>
 
 </body>
 </html>

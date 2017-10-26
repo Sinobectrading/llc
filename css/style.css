@@ -122,14 +122,97 @@ input.err:-moz-placeholder { /* Firefox 4 - 18 */
 #ajaxresponse {
   border-top: 2px solid #2dcc70
 }
-button#track[disabled] {
+button#track[disabled], button#submit[disabled] {
     cursor:not-allowed;
     background-color: #b4b4b4
 }
-button#track[disabled]:hover {
+button#track[disabled]:hover,button#submit[disabled]:hover {
     color: #fff
 }
 
+
+#about-us .span6 p {
+  font-size: 1.2em
+}
+#about-us  p.center h2 {
+  text-align: center;
+}
+/*-=-=-=-=-=-=-=-=-=-=-=- */
+/* Column Grids */
+/*-=-=-=-=-=-=-=-=-=-=-=- */
+
+.col_half { width: 49%; }
+.col_third { width: 32%; }
+.col_fourth { width: 100%; }
+.col_fifth { width: 18.4%; }
+.col_sixth { width: 15%; }
+.col_three_fourth { width: 74.5%;}
+.col_twothird{ width: 66%;}
+.col_half,
+.col_third,
+.col_twothird,
+.col_fourth,
+.col_three_fourth,
+.col_fifth{
+  position: relative;
+  display:inline;
+  display: inline-block;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 20px;
+}
+.end { margin-right: 0 !important; }
+/* Column Grids End */
+
+.wrapper {  margin: 30px auto; position: relative;}
+.counter {  padding: 20px 0; border-radius: 5px;}
+.count-title { 
+  font-size: 50px; 
+  font-weight: normal;  
+  margin-top: 10px; 
+  margin-bottom: 30px;
+  text-align: center; 
+  color: #0088cc;
+}
+.count-text { 
+  font-size: 2em ! important; 
+  color: #0088cc;
+  font-weight: normal;  '
+  margin-bottom: 0; 
+  text-align: center; 
+  font-weight: 800
+}
+.fa-2x { margin: 0 auto; float: none; display: table; color: #4ad1e5; }
+
+
+
+#more {
+  margin-top: 2vh
+}
+
+
+
+
+form#main-contact-form .form-error {
+  color: red;
+  border: 1px solid red;
+  background: #fcddba;
+  padding: 5px;
+}
+
+
+
+
+
+
+.gallery ul li {
+  display:inline-block;
+        *display:inline; /*IE7*/
+        *zoom:1; /*IE7*/
+        background:blue;
+        color:white;
+        margin-right:10px;
+}
 @media (max-width: 767px) {
   body {
     padding-top: 10px;
@@ -145,5 +228,25 @@ button#track[disabled]:hover {
     /* width: 100%; */
     margin-right: 10px;
     margin-bottom: 15px;
+ }
+ ul.gallery li {
+    width:100%;
+  }
+  div.span3 .row-fluid ul.thumbnails li.span3 {
+    display: inline-block;
+    width: 20%
+  }
 }
+@media (min-width: 767px) and  (max-width: 1080px) {
+ ul.gallery li {
+    width:50%;
+  }
+  div.span3 .row-fluid ul.thumbnails li.span3 {
+    display: inline-block;
+    width: 33%
+  }
+}
+@media (max-width: 1080px) {
+  body {
+    padding-top: 0px;
 }

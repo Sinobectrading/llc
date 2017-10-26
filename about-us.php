@@ -29,31 +29,34 @@
         <div class="row-fluid">
             <div class="span6">
                 <h2>What we are</h2>
-                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+                <p>Since its inception, Sinobec Resources has taken pride in its efforts to provide a quality product at a competitive price while optimizing efficiency and professionalism. We supply aluminum products such as billets, plates, sheets, coils, standard and custom extrusions, and special alloys. We simultaneously offer fabrication, manufacturing, warehousing and logistics to accommodate our clients along their </p><p>
+                Our extrusion plants have an annual capacity of over 200,000 metric tons. Our strategically placed distribution centers in Canada, United States, Mexico, and China, allowing for extreme accessibility for our clients.</p>
             </div>
-            <div class="span6">
-                <h2>Our Skills</h2>
-                <div>
-                    <div class="progress"><div class="bar" style="width: 80%; text-align:left; padding-left:10px;">Wordpress</div></div>
-                    <div class="progress progress-warning"><div class="bar" style="width: 70%; text-align:left; padding-left:10px;">Joomla</div></div>
-                    <div class="progress progress-info"><div class="bar" style="width: 60%; text-align:left; padding-left:10px;">Drupal</div></div>
-                    <div class="progress progress-danger"><div class="bar" style="width: 90%; text-align:left; padding-left:10px;">Magento</div></div>
-                </div>
+            <div class="span6 center">
+                <h2>Our Extrusion Plant Annual Capacity</h2>
+                <div class="wrapper">
+                   <div class="counter col_fourth">
+                     <!-- <i class="fa fa-code fa-2x"></i> -->
+                     <h2 class="timer count-title count-number" data-to="200000 " data-speed="2500"></h2>
+                      <p class="count-text">Metric Tons</p>
+                   </div>
+               </div>
             </div>
         </div>
 
         <hr>
 
         <!-- Meet the team -->
-        <h1 class="center">Meet the Team</h1>
+        <h1 class="center">We focus on</h1>
 
         <hr>
 
         <div class="row-fluid">
             <div class="span3">
                 <div class="box">
-                    <p><img src="images/sample/team1.jpg" alt="" ></p>
-                    <h5>Leonard M. Spurlock</h5>
+                    <h4>Sales</h4>
+                    <p><img src="images/about/01.jpg" alt="" ></p>
+                    
                     <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat.</p>
                     <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
                 </div>
@@ -61,27 +64,27 @@
 
             <div class="span3">
                 <div class="box">
-                    <p><img src="images/sample/team2.jpg" alt="" ></p>
-                    <h5>David J. Robbins</h5>
-                    <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat.</p>
+                    <h4>Quality Control </h4>
+                    <p><img src="images/about/01.jpg" alt="" ></p>
+                     <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat.</p>
                     <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
                 </div>
             </div>
 
             <div class="span3">
                 <div class="box">
-                    <p><img src="images/sample/team4.jpg" alt="" ></p>
-                    <h5>Thomas M. Morgan</h5>
-                    <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat.</p>
+                    <h4>Service</h4>
+                    <p><img src="images/about/01.jpg" alt="" ></p>
+                     <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat.</p>
                     <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
                 </div>
             </div>
 
             <div class="span3">
                 <div class="box">
-                    <p><img src="images/sample/team3.jpg" alt="" ></p>
-                    <h5>Agustin E. Hightower</h5>
-                    <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat.</p>
+                    <h4>Integration</h4>
+                    <p><img src="images/about/01.jpg" alt="" ></p>
+                     <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat.</p>
                     <a class="btn btn-social btn-facebook" href="#"><i class="icon-facebook"></i></a> <a class="btn btn-social btn-google-plus" href="#"><i class="icon-google-plus"></i></a> <a class="btn btn-social btn-twitter" href="#"><i class="icon-twitter"></i></a> <a class="btn btn-social btn-linkedin" href="#"><i class="icon-linkedin"></i></a>
                 </div>
             </div>
@@ -93,7 +96,9 @@
         <div class="row-fluid">
             <div class="span6">
                 <h3>Why Choose Us?</h3>
-                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.</p>
+                <p>Sinobec Resources’ experience and exposure to the metal exports market give us the edge in delivering top quality goods on time. Our clients service is people-centric maintaining high ethical business standards for custom and bulk metal products.
+                    Our friendly, integral service department is ready to speak with you and discuss how we can meet and exceed your needs, while providing you with the quickest response time possible. Our dedicated sales team works hand in hand with clients throughout the entire production and coordination process ensuring ultimate satisfaction. Our facilities can satisfy clients’ demand for agreed delivery schedules.
+                    </p>
             </div>
             <div class="span6">
                 <h3>Our Services</h3>
@@ -141,6 +146,105 @@
 
 <!--Bottom-->
  <?php include_once 'footer.php'; ?>
+<script>
+(function ($) {
+     $.fn.countTo = function (options) {
+          options = options || {};
+          
+          return $(this).each(function () {
+               // set options for current element
+               var settings = $.extend({}, $.fn.countTo.defaults, {
+                    from:            $(this).data('from'),
+                    to:              $(this).data('to'),
+                    speed:           $(this).data('speed'),
+                    refreshInterval: $(this).data('refresh-interval'),
+                    decimals:        $(this).data('decimals')
+               }, options);
+               
+               // how many times to update the value, and how much to increment the value on each update
+               var loops = Math.ceil(settings.speed / settings.refreshInterval),
+                    increment = (settings.to - settings.from) / loops;
+               
+               // references & variables that will change with each update
+               var self = this,
+                    $self = $(this),
+                    loopCount = 0,
+                    value = settings.from,
+                    data = $self.data('countTo') || {};
+               
+               $self.data('countTo', data);
+               
+               // if an existing interval can be found, clear it first
+               if (data.interval) {
+                    clearInterval(data.interval);
+               }
+               data.interval = setInterval(updateTimer, settings.refreshInterval);
+               
+               // initialize the element with the starting value
+               render(value);
+               
+               function updateTimer() {
+                    value += increment;
+                    loopCount++;
+                    
+                    render(value);
+                    
+                    if (typeof(settings.onUpdate) == 'function') {
+                         settings.onUpdate.call(self, value);
+                    }
+                    
+                    if (loopCount >= loops) {
+                         // remove the interval
+                         $self.removeData('countTo');
+                         clearInterval(data.interval);
+                         value = settings.to;
+                         
+                         if (typeof(settings.onComplete) == 'function') {
+                              settings.onComplete.call(self, value);
+                         }
+                    }
+               }
+               
+               function render(value) {
+                    var formattedValue = settings.formatter.call(self, value, settings);
+                    $self.html(formattedValue);
+               }
+          });
+     };
+     
+     $.fn.countTo.defaults = {
+          from: 0,               // the number the element should start at
+          to: 0,                 // the number the element should end at
+          speed: 1000,           // how long it should take to count between the target numbers
+          refreshInterval: 100,  // how often the element should be updated
+          decimals: 0,           // the number of decimal places to show
+          formatter: formatter,  // handler for formatting the value before rendering
+          onUpdate: null,        // callback method for every time the element is updated
+          onComplete: null       // callback method for when the element finishes updating
+     };
+     
+     function formatter(value, settings) {
+          return value.toFixed(settings.decimals);
+     }
+}(jQuery));
 
+jQuery(function ($) {
+  // custom formatting example
+  $('.count-number').data('countToOptions', {
+     formatter: function (value, options) {
+       return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
+     }
+  });
+  
+  // start all the timers
+  $('.timer').each(count);  
+  
+  function count(options) {
+     var $this = $(this);
+     options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+     $this.countTo(options);
+  }
+});
+</script>
 </body>
 </html>

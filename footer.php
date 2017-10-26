@@ -65,36 +65,36 @@
             <!--End Archives-->
 
             <div class="span3">
-                <h4>FLICKR GALLERY</h4>
+                <h4>PRODUCTS GALLERY</h4>
                 <div class="row-fluid first">
                     <ul class="thumbnails">
                       <li class="span3">
-                        <a href="http://www.flickr.com/photos/76029035@N02/6829540293/" title="01 (254) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7003/6829540293_bd99363818_s.jpg" width="75" height="75" alt="01 (254)"></a>
+                        <a href="/sinobecresources/images/footer/01.jpg" title="01"><img src="/sinobecresources/images/footer/01.jpg" width="75" height="75" alt="01"></a>
                     </li>
                     <li class="span3">
-                        <a href="http://www.flickr.com/photos/76029035@N02/6829537417/" title="01 (196) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7013/6829537417_465d28e1db_s.jpg" width="75" height="75" alt="01 (196)"></a>
+                        <a href="/sinobecresources/images/footer/01.jpg" title="01"><img src="/sinobecresources/images/footer/01.jpg" width="75" height="75" alt="01"></a>
                     </li>
                     <li class="span3">
-                        <a href="http://www.flickr.com/photos/76029035@N02/6829527437/" title="01 (65) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7021/6829527437_88364c7ec4_s.jpg" width="75" height="75" alt="01 (65)"></a>
+                        <a href="/sinobecresources/images/footer/01.jpg" title="01"><img src="/sinobecresources/images/footer/01.jpg" width="75" height="75" alt="01"></a>
                     </li>
                     <li class="span3">
-                        <a href="http://www.flickr.com/photos/76029035@N02/6829524451/" title="01 (6) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7148/6829524451_a725793358_s.jpg" width="75" height="75" alt="01 (6)"></a>
+                        <a href="/sinobecresources/images/footer/01.jpg" title="01"><img src="/sinobecresources/images/footer/01.jpg" width="75" height="75" alt="01"></a>
                     </li>
                 </ul>
             </div>
             <div class="row-fluid">
                 <ul class="thumbnails">
                     <li class="span3">
-                        <a href="http://www.flickr.com/photos/76029035@N02/6829524451/" title="01 (6) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7148/6829524451_a725793358_s.jpg" width="75" height="75" alt="01 (6)"></a>
+                        <a href="/sinobecresources/images/footer/01.jpg" title="01"><img src="/sinobecresources/images/footer/01.jpg" width="75" height="75" alt="01"></a>
                     </li>
                     <li class="span3">
-                        <a href="http://www.flickr.com/photos/76029035@N02/6829540293/" title="01 (254) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7003/6829540293_bd99363818_s.jpg" width="75" height="75" alt="01 (254)"></a>
+                        <a href="/sinobecresources/images/footer/01.jpg" title="01"><img src="/sinobecresources/images/footer/01.jpg" width="75" height="75" alt="01"></a>
                     </li>
                     <li class="span3">
-                        <a href="http://www.flickr.com/photos/76029035@N02/6829537417/" title="01 (196) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7013/6829537417_465d28e1db_s.jpg" width="75" height="75" alt="01 (196)"></a>
+                        <a href="/sinobecresources/images/footer/01.jpg" title="01"><img src="/sinobecresources/images/footer/01.jpg" width="75" height="75" alt="01"></a>
                     </li>
                     <li class="span3">
-                        <a href="http://www.flickr.com/photos/76029035@N02/6829527437/" title="01 (65) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7021/6829527437_88364c7ec4_s.jpg" width="75" height="75" alt="01 (65)"></a>
+                        <a href="/sinobecresources/images/footer/01.jpg" title="01"><img src="/sinobecresources/images/footer/01.jpg" width="75" height="75" alt="01"></a>
                     </li>
                 </ul>
             </div>
@@ -172,15 +172,17 @@
 </div>
 <!--  /Login form -->
 
-<script src="js/vendor/jquery-1.9.1.min.js"></script>
-<script src="js/vendor/bootstrap.min.js"></script>
-<script src="js/main.js"></script>
+<script src="/sinobecresources/js/vendor/jquery-1.9.1.min.js"></script>
+<script src="/sinobecresources/js/vendor/bootstrap.min.js"></script>
+<script src="/sinobecresources/js/main.js"></script>
 <!-- Required javascript files for Slider -->
-<script src="js/jquery.ba-cond.min.js"></script>
-<script src="js/jquery.slitslider.js"></script>
-
+<script src="/sinobecresources/js/jquery.ba-cond.min.js"></script>
+<script src="/sinobecresources/js/jquery.slitslider.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
 <script>
-$.ajaxSetup({ headers: { 'csrftoken' : '{{ csrf_token() }}' } });
+$.ajaxSetup({ 
+    headers: { 'csrftoken' : '{{ csrf_token() }}' } 
+});
 $("#track").prop('disabled', true);
 $('#poreset').click(function(){
     $('.valid').val("");

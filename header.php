@@ -9,14 +9,14 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <meta name="keywords" content="sinobecresources, aluminum, steel">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/sl-slide.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/sinobecresources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/sinobecresources/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="/sinobecresources/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/sinobecresources/css/main.css">
+    <link rel="stylesheet" href="/sinobecresources/css/sl-slide.css">
+    <link rel="stylesheet" href="/sinobecresources/css/style.css">
 
-    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="/sinobecresources/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
     <!-- Le fav and touch icons -->
     <link rel="shortcut icon" href="images/ico/favicon.ico">

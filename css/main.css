@@ -167,9 +167,7 @@ body>section#slide-show {
     padding: 20px 0
 }
 
-.center {
-    text-align: center
-}
+
 
 .box {
     background-color: #fff;
@@ -895,12 +893,15 @@ ul.gallery.col-3 li {
 ul.gallery.col-4 li {
     width: 25%
 }
-
+ul.gallery {
+    text-align:center;  
+}
 ul.gallery li {
     display: block;
     padding: 0;
     margin: 0;
-    float: left
+    float: left;
+    width:25%;
 }
 
 ul.gallery li .desc {
@@ -950,7 +951,7 @@ ul.gallery li .preview .links {
 }
 
 ul.gallery li .preview .links>a {
-    width: 50px;
+    width: 104px;
     height: 40px;
     line-height: 40px;
     display: inline-block;
@@ -959,7 +960,8 @@ ul.gallery li .preview .links>a {
     color: #fff;
     text-shadow: 0 1px rgba(0, 0, 0, 0.3);
     font-size: 18px;
-    margin: 0 1px
+    margin: 0 1px;
+    border-radius: 3px
 }
 
 ul.gallery li .preview:hover .overlay,
