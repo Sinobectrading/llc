@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/sinobecresources/css/main.css">
     <link rel="stylesheet" href="/sinobecresources/css/sl-slide.css">
     <link rel="stylesheet" href="/sinobecresources/css/style.css">
+    <link rel="stylesheet" href="/sinobecresources/css/nav.css">
 
     <script src="/sinobecresources/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 

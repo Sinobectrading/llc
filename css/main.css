@@ -32,7 +32,7 @@
 }
 
 body {
-    padding-top: 80px;
+    padding-top: 90px;
     font-size: 12px;
     color: #34495e;
     background: #f5f5f5
@@ -279,7 +279,7 @@ header.navbar .navbar-inner {
 
 header #logo {
     width: 300px;
-    height: 80px;
+    height: 90px;
     background: url(../images/logo.png) no-repeat 0 50%
 }
 
@@ -327,8 +327,12 @@ header.navbar .nav>li.dropdown.open>a.dropdown-toggle {
     color: #2dcc70
 }
 
-header.navbar .nav>li.login>a {
-    border-left: 1px solid #e5e5e5
+span.login>a {
+    font-family: "Fjalla One";
+    border-left: 1px solid #e5e5e5;
+    font-size: 16px;
+    padding-left: 10px;
+    height: 90px
 }
 
 header .dropdown-menu {

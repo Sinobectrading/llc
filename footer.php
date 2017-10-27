@@ -178,7 +178,10 @@
 <!-- Required javascript files for Slider -->
 <script src="/sinobecresources/js/jquery.ba-cond.min.js"></script>
 <script src="/sinobecresources/js/jquery.slitslider.js"></script>
+<script src="/sinobecresources/js/cbpHorizontalMenu.js"></script>
+<script src="/sinobecresources/js/modernizr.custom.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
 <script>
 $.ajaxSetup({ 
     headers: { 'csrftoken' : '{{ csrf_token() }}' } 
@@ -282,6 +285,11 @@ $('#track').on({
         });
     },
 });
+
+
+$(function() {
+    cbpHorizontalMenu.init();
 });
 
+});
 </script>
